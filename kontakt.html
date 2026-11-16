@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadMedMening | Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f75cab25fe.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="MadMedMening">
+        </a>
+
+        <button id="bars"
+        type="button"
+        aria-label="åben navigation"
+        aria-expanded="false"
+        aria-controls="mobil-links">
+    <i class="fa-solid fa-bars" aria-hidden="true"></i>
+</button> 
+
+        <nav aria-label="Hovednavigation">
+            <ul id="mobil-links">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="tips.html">Madspildstips</a></li>
+                <li><a href="kontakt.html" aria-current="page">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="kontaktform">
+<section class="kontakt-intro">
+    <h1>Kontakt os</h1>
+    <p>Har du spørgsmål eller gode idéer til mindre madspild? Skriv til os.</p>
+</section>
+
+
+        <!-- Kontaktformular -->
+
+        
+<section class="kontakt-formular">
+    <h2>Send os en besked</h2>
+
+    <form>
+        <label for="navn">Navn</label>
+        <input type="text" id="navn" name="navn"
+        placeholder="Dit navn"
+               autocomplete="name" required>
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email"
+        placeholder="din@mail.dk"
+               autocomplete="email" required>
+
+        <label for="besked">Besked</label>
+        <textarea id="besked" name="besked"
+        placeholder="Skriv din besked her"
+                  rows="5" required></textarea>
+
+        <button type="submit">Send besked</button>
+      </form>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>MadMedMening - Mindre madspild i hverdagen</p>
+</footer>
+
+    <!-- JavaScript til burgermenu -->
+    <script src="script.js"></script>
+
+</body>
+</html>

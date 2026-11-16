@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadMedMening | Madspildstips</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f75cab25fe.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+
+        <!-- Hamburgermenu til mobil -->
+        <button id="bars"
+                type="button"
+                aria-label="åbn navigation"
+                aria-expanded="false"
+                aria-controls="mobil-links">
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="img/logo.svg" alt="MadMedMening logo">
+        </a>
+
+        <!-- Navigation -->
+        <nav aria-label="Hovednavigation">
+            <ul id="mobil-links">
+                <li><a href="index.html">Forside</a></li>
+                <li><a href="tips.html" aria-current="page">Madspildstips</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Sidens indhold -->
+    <main>
+
+       <section class="tips-intro">
+    <h1>Madspildstips</h1>
+    <p>Små tips, der gør det nemmere at undgå madspild i hverdagen.</p>
+</section>
+
+<!-- Madspildstips -->
+<section class="tips-indhold">
+
+    <!-- Tip 1 -->
+    <article class="tip-kort">
+        <img src="img/opbevar.jpg" alt="mad opbevaret i beholdere">
+           
+
+        <div>
+            <h2>Opbevar maden rigtigt</h2>
+            <p>Hold dine råvarer friske længere.</p>
+        </div>
+    </article>
+
+    <!-- Tip 2 -->
+    <article class="tip-kort">
+        <img src="img/madrester.jpg" alt="et måltid lavet af madrester">
+
+
+        <div>
+            <h2>Brug dine madrester</h2>
+            <p>Brug det, du allerede har.</p>
+        </div>
+    </article>
+
+    <!-- Tip 3 -->
+    <article class="tip-kort">
+        <img src="img/planlæg.jpg" alt="Forskellige madvarer, frugt og grøntsager">
+           
+
+        <div>
+            <h2>Planlæg dine indkøb</h2>
+            <p>Køb kun det, du har brug for.</p>
+        </div>
+    </article>
+
+</section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>MadMedMening - Mindre madspild i hverdagen</p>
+    </footer>
+
+    <!-- JavaScript til hamburgermenu -->
+    <script src="script.js"></script>
+
+</body>
+</html>

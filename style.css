@@ -1,0 +1,443 @@
+/* Generel styling */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #F5F0E6;
+    color: #173D2A;
+}
+
+h1, h2, h3 {
+    color: #173D2A;
+}
+
+
+/* Navigation start - mobil */
+
+header {
+    background-color: #F5F0E6;
+    padding: 1.5em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+header a {
+    color: #315C46;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Logo */
+
+.logo img {
+    width: 210px;
+    height: auto;
+    display: block;
+}
+
+.logo {
+    position: relative;
+    left: -15px;
+}
+
+nav a {
+    padding-right: 1em;
+}
+
+nav a:hover {
+    color: #C45F17;
+    transition: 0.5s;
+}
+
+/* Hamburgermenu - mobil */
+
+header {
+    position: relative;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* Burgerknap til højre */
+
+#bars {
+    position: absolute;
+    right: 1em;
+    background: none;
+    border: none;
+    color: #315C46;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Navigation skjult på mobil */
+
+nav ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+}
+
+/* Navigation når man klikker */
+
+nav ul.show {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #F5F0E6;
+    z-index: 10;
+}
+
+nav a {
+    display: block;
+    padding: 0.5em;
+}
+
+/* Fokus ved tastaturnavigation */
+
+#bars:focus-visible,
+nav a:focus-visible {
+    outline: 3px solid #173D2A;
+    outline-offset: 4px;
+}
+
+
+/* Forside - orange hero */
+
+.hero {
+    background-color: #EC8A42;
+    padding: 3em 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.hero h1 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 2em;
+}
+
+
+/* Grøn knap */
+
+.hero a {
+    background-color: #315C46;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.hero a:hover {
+    background-color: #173D2A;
+}
+
+
+/* Hero billede */
+
+.hero-tekst {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* Tips til din hverdag */
+
+.tips {
+    padding: 2em;
+    background-color: #F5F0E6;
+}
+
+.tips-kort {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+}
+
+.tips-kort article {
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    min-height: 180px;
+}
+
+/* Første kort - lysegrøn */
+
+.tips-kort article:nth-child(1) {
+    background-color: #ACC2A3;
+}
+
+/* Andet kort - beige */
+
+.tips-kort article:nth-child(2) {
+    background-color: #DABB99;
+}
+
+/* Tredje kort - orange  */
+
+.tips-kort article:nth-child(3) {
+    background-color: #EC8A42;
+    grid-column: 1 / -1;
+    min-height: auto;
+    padding: 1em;
+}
+
+/* Link i orange kort */
+
+.tips-kort article:nth-child(3) a {
+    color: #173D2A;
+    text-decoration: none;
+}
+
+.tips-kort article:nth-child(3) a:hover {
+    text-decoration: underline;
+}
+
+.tips-kort article:nth-child(3) a:focus-visible {
+    outline: 3px solid #173D2A;
+    outline-offset: 4px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #F5F0E6;
+    text-align: center;
+    padding: 2em 1em;
+    font-size: 14px;
+    color: #315C46;
+}
+
+/* Kontakt - orange introduktion */
+
+.kontakt-intro {
+    background-color: #EC8A42;
+    padding: 3em 2em;
+}
+
+.kontakt-intro h1 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.kontakt-intro p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+/* Kontaktformular */
+
+
+.kontaktform {
+    background-color: #F5F0E6;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.kontakt-formular {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+     background-color: #F5F0E6;
+    border-radius: 10px;
+}
+
+.kontakt-formular form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.kontakt-formular input,
+.kontakt-formular textarea {
+    height: 110px;
+    width: 100%;
+    padding: 1em;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    font: inherit;
+}
+
+/* Navn og E-mail */
+.kontakt-formular input {
+    height: 55px;
+}
+
+/* Besked */
+.kontakt-formular textarea {
+    height: 140px;
+}
+
+.kontakt-formular button {
+    background-color: #315C46;
+    color: white;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 65%;
+    align-self: flex-start;
+}
+
+.kontakt-formular button:hover {
+    background-color: #173D2A;
+}
+
+.kontakt-formular input:focus-visible,
+.kontakt-formular textarea:focus-visible,
+.kontakt-formular button:focus-visible {
+    outline: 3px solid #173D2A;
+    outline-offset: 3px;
+}
+
+
+/* Responsiv tilpasning - desktop */
+
+@media only screen and (min-width: 851px) {
+
+
+
+    /* Navigation - desktop */
+
+    #bars {
+        display: none;
+    }
+
+    nav ul,
+    nav ul.show {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        padding: 0;
+        gap: 1.5em;
+    }
+
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4em 2em;
+    }
+
+    .hero-tekst {
+        width: 55%;
+    }
+
+    .hero img {
+        width: 40%;
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .tips-kort {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Tredje kort - desktop */
+
+.tips-kort article:nth-child(3) {
+    grid-column: auto;
+}
+
+/* Større logo på desktop */
+
+.logo img {
+    width: 250px;
+}
+
+}
+
+/* Madspildstips - introduktion */
+
+.tips-intro {
+    background-color: #EC8A42;
+    padding: 3em 2em;
+}
+
+.tips-intro h1 {
+    font-size: 32px;
+    margin-top: 0;
+}
+
+.tips-intro p {
+    font-size: 18px;
+}
+
+/* Madspildstips - kort */
+
+.tips-indhold {
+    background-color: #F5F0E6;
+    padding: 2em;
+}
+
+/* Hvert tip-kort */
+
+.tip-kort {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    margin-bottom: 1.5em;
+    border-radius: 15px;
+}
+
+/* Billeder i kortene */
+
+.tip-kort img {
+    width: 35%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Tekst i kortene */
+
+.tip-kort h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.tip-kort p {
+    font-size: 16px;
+    margin-top: 0.5em;
+}
+
+.hero a:focus-visible {
+    outline: 3px solid #173D2A;
+    outline-offset: 4px;
+}
